@@ -1,0 +1,10 @@
+declaration
+
+calc to convert 
+convert mile to kilometer
+float mile
+mile / x = kilo
+
+convert garon to liter
+float liter
+garon / y = liter
