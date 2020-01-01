@@ -1,0 +1,9 @@
+put 2 date
+calculate days between two input date
+
+[usage]
+input 2 days
+
+calculate gap_days
+
+response gap_days

@@ -1,0 +1,13 @@
+calculate duration to transsend a file
+
+[Spec]
+    velocity of sirial_cable: 960 character / sec
+    bytes / character
+        An ASCII character in UTF-8 is 8 bits (1 byte)
+        1 byte / character
+
+[Question]
+    how long does it take to send the file of 400M bytes (419430400 bytes)?
+
+    
+

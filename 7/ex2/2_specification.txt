@@ -1,0 +1,47 @@
+[input]
+older_year
+older_month
+older_day
+
+later_year
+later_month
+later_day
+
+
+tell which date is later
+
+check leap_year and set leap_yearFlag
+if (later_year % 4 == 0)
+    {
+        printf("later_year can devide by 4 \n");
+        // 400で割り切れない && 100の倍数年
+        if ((later_year % 400 != 0) && (later_year % 100 == 0))
+        {
+            printf("normal \n");
+            /* normal */
+        } else
+        {
+            /* leap year */
+            printf("leap year \n");
+            leapFlag_later = 1;
+        }
+    } 
+
+about older date
+toEndMonth_o = calculate days till end of the month
+    check leap_year if the month was February
+
+fromEndMonth2endYear_o = calculate days between end of the month and end of the year.
+    check leap_year if the month was January (contain February)
+
+about later date
+fromStartMonth_l = calculate days since beggining of the month
+fromStartYear2endMonth_l = calculate days between beggining of the year and beggining of the month.  
+ check leap_year if the month was March or later (contain February)
+
+calc yearses days between
+later_year - older_year = years_gap
+loop from later_year + 1 to older_year -1
+gap_years_days = count days of years_gap  
+
+gap_days = gap_years_days + toEndMonth_o + fromEndMonth2endYear_o + fromStartMonth_l + fromStartYear2endMonth_l
